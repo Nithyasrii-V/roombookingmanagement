@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse a gallery of comfortable Roomly stays and find the right room for your next trip.">
+    <title>Gallery — Roomly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="gallery-page">
+    <header class="site-header">
+        <nav class="navigation container" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-label="Roomly home">Logo<span>.</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="primary-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-hero" aria-labelledby="gallery-title">
+            <div class="gallery-hero-shade"></div>
+            <div class="gallery-hero-content">
+                <h1 id="gallery-title">Gallery</h1>
+                <p><a href="index.html">Home</a><span aria-hidden="true"> / </span>Gallery</p>
+            </div>
+        </section>
+
+        <section class="room-gallery container" aria-label="Room photo gallery">
+            <div class="room-gallery-grid">
+                <figure class="room-gallery-item room-gallery-item-large">
+                    <img src="Assets/hero 3.jpg" alt="Bright room with a king bed, sitting area, and a view outside" fetchpriority="high">
+                </figure>
+                <figure class="room-gallery-item room-gallery-item-top">
+                    <img src="Assets/suite 3.jpg" alt="Modern suite with a king bed and sitting area" loading="lazy">
+                </figure>
+                <figure class="room-gallery-item room-gallery-item-top">
+                    <img src="Assets/suite 1.jpg" alt="Guest room with a comfortable king bed and city view" loading="lazy">
+                </figure>
+                <figure class="room-gallery-item room-gallery-item-wide">
+                    <img src="Assets/113c0314608e6456a009d1c59bb9ba9659f912a2.jpg" alt="Guest suite with a bed, sofa, and large windows" loading="lazy">
+                </figure>
+                <figure class="room-gallery-item room-gallery-item-bottom">
+                    <img src="Assets/suite 2.jpg" alt="Warmly lit bedroom with a spacious king bed" loading="lazy">
+                </figure>
+                <figure class="room-gallery-item room-gallery-item-bottom">
+                    <img src="Assets/hero 2.jpg" alt="Elegant four-poster bedroom with a bright garden view" loading="lazy">
+                </figure>
+                <figure class="room-gallery-item room-gallery-item-tall">
+                    <img src="Assets/hero 3.jpg" alt="Bright room with a king bed, sitting area, and a view outside" loading="lazy">
+                </figure>
+                <figure class="room-gallery-item room-gallery-item-bottom-wide">
+                    <img src="Assets/a1.jpg" alt="Airy room with a king bed and a view of the sea" loading="lazy">
+                </figure>
+            </div>
+        </section>
+
+        <section class="gallery-booking container" aria-labelledby="gallery-booking-title">
+            <div class="gallery-booking-copy">
+                <span class="gallery-booking-eyebrow">YOUR NEXT STAY STARTS HERE</span>
+                <h2 id="gallery-booking-title">Book your perfect stay anytime, anywhere!</h2>
+                <p>From cozy budget rooms to luxury stays, find a comfortable place for every journey.</p>
+                <a class="button gallery-booking-button" href="index.html#booking-form">Book Now</a>
+            </div>
+            <div class="gallery-booking-image" role="img" aria-label="A welcoming room ready for your stay"></div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a class="brand brand-footer" href="index.html">
+                    <span class="footer-mark" aria-hidden="true">R</span>
+                    <span class="footer-wordmark">Roomly</span>
+                </a>
+                <p>Find a place to feel at home, wherever you go. Book comfortable stays with confidence, wherever your journey takes you.</p>
+            </div>
+            <nav class="footer-column" aria-label="Footer pages">
+                <h2>Pages</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="index.html#places">Popular places</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-column" aria-label="Footer services">
+                <h2>Services</h2>
+                <ul>
+                    <li><a href="index.html#booking-form">Room booking</a></li>
+                    <li><a href="index.html#services">Facilities</a></li>
+                    <li><a href="index.html#why-choose">Guest support</a></li>
+                </ul>
+            </nav>
+            <div class="footer-column">
+                <h2>Contact</h2>
+                <ul>
+                    <li><a href="mailto:hello@roomly.example">hello@roomly.example</a></li>
+                    <li><a href="contact.html">Get in touch</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">© <span id="current-year"></span> Roomly. All rights reserved.</div>
+    </footer>
+</body>
+</html>

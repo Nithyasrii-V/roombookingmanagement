@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Roomly for help with finding and booking your next comfortable stay.">
+    <title>Contact Us — Roomly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="contact-page">
+    <header class="site-header">
+        <nav class="navigation container" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-label="Roomly home">Logo<span>.</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="primary-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html" aria-current="page">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero" aria-labelledby="contact-title">
+            <div class="contact-hero-shade"></div>
+            <div class="contact-hero-content">
+                <h1 id="contact-title">Contact us</h1>
+                <p><a href="index.html">Home</a><span aria-hidden="true"> / </span>Contact us</p>
+            </div>
+        </section>
+
+        <section class="contact-information container" aria-labelledby="contact-information-title">
+            <div class="contact-section-heading">
+                <h2 id="contact-information-title">Contact Information</h2>
+                <p>We're here 24/7 to assist you with anything you need.</p>
+            </div>
+            <div class="contact-cards">
+                <a class="contact-card" href="tel:+91971367838">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02l-2.2 2.2Z"/></svg>
+                    <span>97913 67838</span>
+                </a>
+                <a class="contact-card" href="mailto:demo@gmail.com">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3h13A2.5 2.5 0 0 1 21 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5v-13Zm2 .2v.37l7 4.9 7-4.9V5.7c0-.11-.09-.2-.2-.2H5.2c-.11 0-.2.09-.2.2Zm14 2.81-6.43 4.5a1 1 0 0 1-1.14 0L5 8.51v9.99c0 .11.09.2.2.2h13.6c.11 0 .2-.09.2-.2V8.51Z"/></svg>
+                    <span>demo@gmail.com</span>
+                </a>
+                <a class="contact-card" href="https://www.openstreetmap.org/?mlat=37.335&mlon=-121.89#map=14/37.335/-121.89" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+                    <span>2715 Ash Dr, San Jose, South Dakota 83475</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="contact-message" aria-labelledby="contact-message-title">
+            <div class="container contact-message-inner">
+                <div class="contact-message-heading">
+                    <h2 id="contact-message-title">Your comfort starts with great<br class="contact-desktop-break"> support — get in touch.</h2>
+                    <p>Have a question? Send us a message and we'll be happy to help.</p>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <label>
+                        <span class="visually-hidden">Full name</span>
+                        <input type="text" name="name" placeholder="Full Name" autocomplete="name" required>
+                    </label>
+                    <label>
+                        <span class="visually-hidden">Email address</span>
+                        <input type="email" name="email" placeholder="Email Name" autocomplete="email" required>
+                    </label>
+                    <label class="contact-phone-field">
+                        <span class="visually-hidden">Phone number</span>
+                        <input type="tel" name="phone" placeholder="Phone Number" autocomplete="tel">
+                    </label>
+                    <label class="contact-message-field">
+                        <span class="visually-hidden">Additional message</span>
+                        <textarea name="message" placeholder="Additional Message" rows="4" required></textarea>
+                    </label>
+                    <button class="contact-submit" type="submit">Send Now</button>
+                    <p class="contact-form-status" id="contact-form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="contact-map container" aria-label="Our location in San Jose">
+            <iframe
+                title="Map showing San Jose"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-121.96%2C37.31%2C-121.82%2C37.37&amp;layer=mapnik&amp;marker=37.335%2C-121.89"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a class="brand brand-footer" href="index.html">
+                    <span class="footer-mark" aria-hidden="true">R</span>
+                    <span class="footer-wordmark">Roomly</span>
+                </a>
+                <p>Find a place to feel at home, wherever you go. Book comfortable stays with confidence, wherever your journey takes you.</p>
+            </div>
+            <nav class="footer-column" aria-label="Footer pages">
+                <h2>Pages</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="index.html#places">Popular places</a></li>
+                    <li><a href="index.html#rooms">Rooms</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-column" aria-label="Footer services">
+                <h2>Services</h2>
+                <ul>
+                    <li><a href="index.html#booking-form">Room booking</a></li>
+                    <li><a href="index.html#services">Facilities</a></li>
+                    <li><a href="index.html#why-choose">Guest support</a></li>
+                </ul>
+            </nav>
+            <div class="footer-column">
+                <h2>Contact</h2>
+                <ul>
+                    <li><a href="mailto:demo@gmail.com">demo@gmail.com</a></li>
+                    <li><a href="tel:+91971367838">97913 67838</a></li>
+                    </ul>
+            </div>
+        </div>
+        <div class="copyright">© <span id="current-year"></span> Roomly. All rights reserved.</div>
+    </footer>
+</body>
+</html>

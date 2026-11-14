@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find and book comfortable rooms for your next stay.">
+    <title>Room Booking — Find Your Perfect Room</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation container" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Roomly home">Logo<span>.</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="primary-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-shade"></div>
+            <div class="hero-content container">
+                <h1>Find Your Perfect Room<br>in Seconds</h1>
+                <p>Seamless room booking for work, travel, or stay—<br class="desktop-break"> anywhere, anytime.</p>
+            </div>
+            <form class="booking-form" id="booking-form">
+                <label class="booking-field">
+                    <span>Check in</span>
+                    <input type="date" name="checkin" id="checkin" required aria-label="Check-in date">
+                </label>
+                <label class="booking-field">
+                    <span>Check out</span>
+                    <input type="date" name="checkout" id="checkout" required aria-label="Check-out date">
+                </label>
+                <label class="booking-field guest-field">
+                    <span>Guests &amp; Rooms</span>
+                    <select name="guests" id="guests" aria-label="Guests and rooms">
+                        <option value="2">2 Adults / 1 Room</option>
+                        <option value="1">1 Adult / 1 Room</option>
+                        <option value="3">3 Adults / 1 Room</option>
+                        <option value="4">4 Adults / 2 Rooms</option>
+                    </select>
+                </label>
+                <button class="button button-search" type="submit">Search</button>
+                <p class="booking-message" id="booking-message" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="about section container" id="about">
+            <div class="about-gallery" aria-label="A look inside our comfortable rooms">
+                <img class="gallery-image gallery-image-one" src="Assets/hero 2.jpg" alt="Bright guest room with a comfortable bed">
+                <img class="gallery-image gallery-image-two" src="Assets/hero 3.jpg" alt="Warm, thoughtfully designed hotel interior">
+                <!-- <span class="gallery-badge"><strong>4.9</strong><span>Guest rating</span></span> -->
+            </div>
+            <div class="about-copy">
+                <span class="eyebrow">ABOUT US</span>
+                <h2>Your Trusted Partner in Comfortable<br><span>&amp; Convenient Stays</span></h2>
+                <p>We are a digital-first room booking platform dedicated to making your travel and work stay smoother. From cozy homestays to corporate rooms, we connect you with verified hosts across cities with real-time availability and thoughtful amenities.</p>
+                <a class="button button-outline" href="#services">Read more</a>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section-heading section-heading-light">
+                    <h4>FACILITIES</h4>
+                    <h2>Services Designed for Comfort<br>and Control</h2>
+                </div>
+                <div class="service-grid">
+                    <article class="service-card">
+                        <h3>Room Booking</h3>
+                        <p>Real-time availability across budget to premium rooms.</p>
+                        <img src="Assets/facilities 1.png" alt="" aria-hidden="true">
+                    </article>
+                    <article class="service-card">
+                        <h3>High-Speed WiFi</h3>
+                        <p>Stay connected with seamless internet services.</p>
+                        <img src="Assets/facilities 2.png" alt="" aria-hidden="true">
+                    </article>
+                    <article class="service-card">
+                        <h3>Air Conditioning</h3>
+                        <p>All rooms equipped with powerful air conditioning.</p>
+                        <img src="Assets/facilities 3.png" alt="" aria-hidden="true">
+                    </article>
+                    <article class="service-card">
+                        <h3>Power Backup</h3>
+                        <p>No more blackouts—24/7 uninterrupted power.</p>
+                        <img src="Assets/facilities 4.png" alt="" aria-hidden="true">
+                    </article>
+                    <article class="service-card">
+                        <h3>Smart Key Access</h3>
+                        <p>Digital key insertion system for enhanced safety.</p>
+                        <img src="Assets/facilities 5.png" alt="" aria-hidden="true">
+                    </article>
+                    <article class="service-card">
+                        <h3>Hot Water Facility</h3>
+                        <p>Instant hot showers to start your day right.</p>
+                        <img src="Assets/facilities 6.png" alt="" aria-hidden="true">
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-places section container" id="places">
+            <div class="section-heading">
+                <span class="eyebrow">POPULAR PLACES</span>
+                <h2>Discover more popular places here.</h2>
+            </div>
+            <div class="places-grid">
+                <article class="place-card">
+                    <img src="Assets/munnar.png" alt="Tea plantations in Munnar" loading="lazy">
+                    <h3>munnar</h3>
+                </article>
+                <article class="place-card">
+                    <img src="Assets/kanthalloor.png" alt="Waterfall in Kanthalloor" loading="lazy">
+                    <h3>Kanthalloor</h3>
+                </article>
+                <article class="place-card">
+                    <img src="Assets/valparai.png" alt="Tea gardens in Valparai" loading="lazy">
+                    <h3>Valparai</h3>
+                </article>
+                <article class="place-card">
+                    <img src="Assets/kodaikanal.png" alt="Kodaikanal lake and hills" loading="lazy">
+                    <h3>Kodaikanal</h3>
+                </article>
+                <article class="place-card">
+                    <img src="Assets/marayoor.png" alt="Sunset in Marayoor" loading="lazy">
+                    <h3>Marayoor</h3>
+                </article>
+                <article class="place-card">
+                    <img src="Assets/amaravathi dam.png" alt="Water flowing through Amaravathi Dam" loading="lazy">
+                    <h3>Amaravathi Dam</h3>
+                </article>
+                <article class="place-card">
+                    <img src="Assets/thirumoorthy hills.png" alt="Green mountains in Thirumoorthy Hills" loading="lazy">
+                    <h3>Thirumoorthy hills</h3>
+                </article>
+                <article class="place-card">
+                    <img src="Assets/chinnar wildlife.png" alt="Wildlife at Chinnar Wildlife Sanctuary" loading="lazy">
+                    <h3>Chinnar Wildlife</h3>
+                </article>
+                <article class="place-card">
+                    <img src="Assets/thoovanam waterfalls.png" alt="Thoovanam Waterfalls" loading="lazy">
+                    <h3>Thoovanam Waterfalls</h3>
+                </article>
+                <article class="place-card">
+                    <img src="Assets/topslip.png" alt="Topslip forest reserve" loading="lazy">
+                    <h3>Topslip</h3>
+                </article>
+                <article class="place-card">
+                    <img src="Assets/palani.png" alt="Palani town and hills" loading="lazy">
+                    <h3>Palani</h3>
+                </article>
+            </div>
+        </section>
+
+        <section class="location-strip" aria-label="Find your nearest location">
+            <div class="location-route container">
+                <svg class="location-car" viewBox="0 0 96 52" role="img" aria-label="Car">
+                    <path d="M17 33 23 19a8 8 0 0 1 7-5h32a8 8 0 0 1 7 4l9 15h5a6 6 0 0 1 6 6v5H9v-5a6 6 0 0 1 6-6h2Z" fill="#0876f9"/>
+                    <path d="m27 20-5 12h26V18H31a5 5 0 0 0-4 2Zm25-2v14h21l-7-12a4 4 0 0 0-4-2H52Z" fill="#dcecff"/>
+                    <path d="M9 35h80v9H9z" fill="#17212f"/>
+                    <circle cx="27" cy="43" r="7" fill="#17212f"/><circle cx="27" cy="43" r="3" fill="#fff"/>
+                    <circle cx="71" cy="43" r="7" fill="#17212f"/><circle cx="71" cy="43" r="3" fill="#fff"/>
+                    <path d="M6 48h84" stroke="#17212f" stroke-linecap="round" stroke-width="2"/>
+                    <path d="M14 12h5m-2.5-2.5v5" stroke="#58a5ff" stroke-linecap="round" stroke-width="2"/>
+                </svg>
+                <span>Nearest Location</span>
+                <img src="Assets/map.png" alt="Map location marker" loading="lazy">
+            </div>
+        </section>
+
+        <section class="why-choose" id="why-choose">
+            <div class="why-choose-content container">
+                <div class="comfort-visual">
+                    <img src="Assets/maid.jpg" alt="Room attendant preparing a comfortable guest room" loading="lazy">
+                    <div class="comfort-badge">Your Comfort,<br>Our Priority</div>
+                </div>
+                <div class="why-choose-copy">
+                    <h2>Why <span>Choose Us?</span></h2>
+                    <p class="why-intro">We don’t just offer rooms — we deliver peace of mind with every booking.</p>
+                    <div class="why-cards">
+                        <article class="why-card">
+                            <h3><span aria-hidden="true">✅</span> Verified Hosts</h3>
+                            <p>All listings are manually verified for quality and safety.</p>
+                        </article>
+                        <article class="why-card">
+                            <h3><span aria-hidden="true">📞</span> 24/7 Support</h3>
+                            <p>Our team is always here to help, day or night.</p>
+                        </article>
+                        <article class="why-card">
+                            <h3><span aria-hidden="true">🌐</span> Multi-Device Access</h3>
+                            <p>Book and manage your stays across mobile, tablet, or desktop.</p>
+                        </article>
+                        <article class="why-card">
+                            <h3><span aria-hidden="true">💸</span> Transparent Pricing</h3>
+                            <p>No hidden fees. What you see is what you pay.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="room-suites section container" id="rooms">
+            <div class="section-heading">
+                <span class="eyebrow">LUXURY EXPERIENCE</span>
+                <h2>Rooms &amp; Suites</h2>
+            </div>
+            <div class="suite-grid">
+                <article class="suite-card">
+                    <h3>Standard Room</h3>
+                    <img src="Assets/suite 1.jpg" alt="Bright standard room with a king bed" loading="lazy">
+                    <a class="suite-book-button" href="#booking-form">Book Now</a>
+                </article>
+                <article class="suite-card">
+                    <h3>Deluxe Room</h3>
+                    <img src="Assets/suite 2.jpg" alt="Deluxe room with a warmly lit king bed" loading="lazy">
+                    <a class="suite-book-button" href="#booking-form">Book Now</a>
+                </article>
+                <article class="suite-card">
+                    <h3>Executive Suite</h3>
+                    <img src="Assets/suite 3.jpg" alt="Executive suite with a sitting area and king bed" loading="lazy">
+                    <a class="suite-book-button" href="#booking-form">Book Now</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="testimonials-heading">
+                    <span class="eyebrow">TESTIMONIALS</span>
+                    <h2>What Our <span>Happy Members Say</span></h2>
+                </div>
+                <div class="testimonial-grid">
+                    <article class="testimonial-card">
+                        <p class="testimonial-quote">Booking was simple, the room was spotless, and the host made us feel welcome from the moment we arrived.</p>
+                        <div class="testimonial-member">
+                            <img src="Assets/ankit.jpg" alt="" loading="lazy">
+                            <div class="member-details">
+                                <h3>Ankit</h3>
+                                <span class="member-rating" aria-label="4 out of 5 stars"><span>★★★★</span><span class="muted-star">★</span></span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card testimonial-card-featured">
+                        <p class="testimonial-quote">I loved how easy it was to compare rooms and book. The photos were accurate and check-in was effortless.</p>
+                        <div class="testimonial-member">
+                            <img src="Assets/sidharth.jpg" alt="" loading="lazy">
+                            <div class="member-details">
+                                <h3>Siddharth</h3>
+                                <span class="member-rating" aria-label="5 out of 5 stars"><span>★★★★★</span></span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <p class="testimonial-quote">Great location, comfortable bed, and helpful support whenever we needed it. We’ll definitely stay again.</p>
+                        <div class="testimonial-member">
+                            <img src="Assets/harish.jpg" alt="" loading="lazy">
+                            <div class="member-details">
+                                <h3>Harish</h3>
+                                <span class="member-rating" aria-label="4 out of 5 stars"><span>★★★★</span><span class="muted-star">★</span></span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <p class="testimonial-quote">A smooth booking experience and a lovely room. Everything was just as described, with no hidden fees.</p>
+                        <div class="testimonial-member">
+                            <img src="Assets/lakshmi.jpg" alt="" loading="lazy">
+                            <div class="member-details">
+                                <h3>Lakshmi</h3>
+                                <span class="member-rating" aria-label="4 out of 5 stars"><span>★★★★</span><span class="muted-star">★</span></span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a class="brand brand-footer" href="#home">
+                    <span class="footer-mark" aria-hidden="true">R</span>
+                    <span class="footer-wordmark">Roomly</span>
+                </a>
+                <p>Find a place to feel at home, wherever you go. Book comfortable stays with confidence, wherever your journey takes you.</p>
+            </div>
+            <nav class="footer-column" aria-label="Footer pages">
+                <h2>Pages</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#places">Popular places</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-column" aria-label="Footer services">
+                <h2>Services</h2>
+                <ul>
+                    <li><a href="#booking-form">Room booking</a></li>
+                    <li><a href="#services">Facilities</a></li>
+                    <li><a href="#why-choose">Guest support</a></li>
+                </ul>
+            </nav>
+            <div class="footer-column footer-contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm2 .15v.32l7 4.9 7-4.9V6.9H5Zm14 2.76-6.43 4.5a1 1 0 0 1-1.14 0L5 9.66v7.59c0 .14.11.25.25.25h13.5c.14 0 .25-.11.25-.25V9.66Z"/></svg>
+                        <a href="mailto:hello@roomly.example">hello@roomly.example</a>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1.25A2.75 2.75 0 0 1 22 6.75v12.5A2.75 2.75 0 0 1 19.25 22H4.75A2.75 2.75 0 0 1 2 19.25V6.75A2.75 2.75 0 0 1 4.75 4H6V3a1 1 0 0 1 1-1Zm12.25 7H4v10.25c0 .41.34.75.75.75h14.5c.41 0 .75-.34.75-.75V9ZM6 6H4.75a.75.75 0 0 0-.75.75V7h16v-.25a.75.75 0 0 0-.75-.75H18v1a1 1 0 1 1-2 0V6H8v1a1 1 0 0 1-2 0V6Z"/></svg>
+                        <a href="#booking-form">Book your stay online</a>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a8 8 0 0 0-8 8c0 5.4 7.03 11.36 7.33 11.61a1 1 0 0 0 1.34 0C12.97 21.36 20 15.4 20 10a8 8 0 0 0-8-8Zm0 17.49C9.88 17.56 6 13.33 6 10a6 6 0 1 1 12 0c0 3.33-3.88 7.56-6 9.49ZM12 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm0 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+                        <a href="#places">Explore popular destinations</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">© <span id="current-year"></span> Roomly. All rights reserved.</div>
+    </footer>
+</body>
+</html>
